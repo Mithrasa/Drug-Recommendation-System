@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Health Care Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- </head> -->
+
+    <style>
+        .logo {
+            width: 50px;
+            height: 50px;
+            color: black;
+            margin-top: 0;
+            margin-left: 2px;
+        }
+
+        .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Logo at the top-left corner -->
+            <div class="logo">
+                <img class="myimg" src="{{ url_for('static', filename='app_logo.jpg') }}" alt="">
+            </div>
+
+            <a class="navbar-brand" href="#"> Drug Recommender</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Links at the end -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/developer">Developer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4 mt-4">
+        <h6> About Arjun Balaji : AI & ML Engineer
+        </h6>
+
+        <div class="card text-center" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">Meet the Developer</h5>
+
+                <p>Hello, I'm Arjun Balaji, Final year Artificial Intelligence and Data Science Student at KPR Institute
+                    of Engineering and Technology, Coimbatore. I'm an AI & ML Engineer with a passion for creating
+                    innovative solutions that harness the power of technology to improve lives. I'm excited to share my
+                    journey with you and introduce you to Drug Recommender System.
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="card text-center" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">My Expertise</h5>
+
+                <p>My expertise lies in developing AI-driven solutions that address real-world challenges. From
+                    predictive
+                    analytics to natural language processing, I have experience in a wide range of AI and ML
+                    technologies. I'm
+                    also well-versed in programming languages such as Python, Java, and R, as well as frameworks like
+                    TensorFlow
+                    and PyTorch.
+                </p>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h5>
+        </h5>
+
+        <h5>A Commitment to Excellence
+        </h5>
+        <p>Throughout my academic and professional career, I have been driven by a commitment to excellence. I believe
+            in the power of technology to transform industries and improve lives, and I strive to create solutions that
+            are both innovative and impactful. I am dedicated to pushing the boundaries of what is possible with AI and
+            ML, and I am excited to continue learning and growing in this field.
+        </p>
+        <h5>Passion for Health Tech
+        </h5>
+        <p>The development of Drug Recommender System is a project that is particularly close to my heart. I am
+            passionate about leveraging AI and ML to revolutionize healthcare and empower individuals to take control of
+            their well-being. By harnessing the power of technology, we can provide personalized recommendations that
+            help Medical professionals to make informed decisions about their health.
+        </p>
+        <h5>Join Me on this Journey
+        </h5>
+        <p>I invite you to join me on this journey as we explore the possibilities of AI and ML in healthcare. Together,
+            we can create a future where access to quality healthcare is not just a privilege, but a fundamental right.
+            Thank you for your support, and I look forward to sharing more with you soon.
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

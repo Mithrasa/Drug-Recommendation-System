@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <style>
+      a {
+        text-decoration: none;
+      }
+    </style>
+
+    <script>
+      window.onload = function() {
+        if (performance.navigation.type == 1) {
+          // Page is reloaded
+          window.location.href = "{{ url_for('home') }}";
+        }
+      }
+    </script>
+
+  </head>
+  <body>
+
+    
+    <div class="container">
+      <h2>Write a Review</h2>
+      <form method="POST" action="{{ url_for('predict_sentiment')}}">
+        <label for="review"></label>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea>
+        <button type="submit">Recommend</button>
+      </form>
+    </div>
+
+    {% if prediction %}
+    <div class="prediction">
+      <h3>Predicted Condition:</h3>
+      <p>{{ prediction }}</p>
+    </div>
+    {% endif %} 
+    
+    {% if top_drugs %}
+<div class="top-drugs">
+  <h3>Top 3 Suggested Drugs:</h3>
+  <ul>
+    {% for drug in top_drugs[:3] %}
+        <li>{{ drug }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+    
+  </body>
+</html>
